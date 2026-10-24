@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Use · CafBeat</title>
+<meta name="description" content="Terms of Use · CafBeat">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+(function () {
+  var L = {"zh-Hans": "用户协议 · 咖律", "zh-Hant": "使用者協議 · 咖律", "en": "Terms of Use · CafBeat", "ja": "利用規約 · CafBeat", "ko": "이용약관 · CafBeat", "th": "ข้อกำหนดการใช้งาน · CafBeat"}, d = document.documentElement;
+  function pick(c) {
+    if (!c) return null;
+    c = String(c).toLowerCase().replace(/_/g, "-");
+    if (/^zh-(hant|tw|hk|mo)/.test(c)) return "zh-Hant";
+    if (/^zh/.test(c)) return "zh-Hans";
+    var p = c.split("-")[0];
+    return ["en", "ja", "ko", "th"].indexOf(p) >= 0 ? p : null;
+  }
+  var q = null;
+  try { q = new URLSearchParams(location.search).get("lang"); } catch (e) {}
+  var lang = pick(q);
+  if (!lang) {
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; i < list.length && !lang; i++) lang = pick(list[i]);
+  }
+  lang = lang || "en";
+  d.setAttribute("data-lang", lang);
+  d.lang = lang;
+  document.title = L[lang];
+})();
+</script>
+<style>
+html[data-lang] section[data-lang]{display:none}
+html[data-lang="zh-Hans"] section[data-lang="zh-Hans"]{display:block}
+html[data-lang="zh-Hant"] section[data-lang="zh-Hant"]{display:block}
+html[data-lang="en"] section[data-lang="en"]{display:block}
+html[data-lang="ja"] section[data-lang="ja"]{display:block}
+html[data-lang="ko"] section[data-lang="ko"]{display:block}
+html[data-lang="th"] section[data-lang="th"]{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+<section data-lang="zh-Hans" lang="zh-Hans">
+<header class="top">
+  <a class="brand" href="https://wrzxnx.github.io/cafbeat/?lang=zh-Hans"><img src="assets/icon.png" alt="">咖律</a>
+  <nav class="lang" aria-label="Language">
+    <a href="?lang=zh-Hans" aria-current="page" hreflang="zh-Hans">简体</a>
+    <a href="?lang=zh-Hant" hreflang="zh-Hant">繁體</a>
+    <a href="?lang=en" hreflang="en">English</a>
+    <a href="?lang=ja" hreflang="ja">日本語</a>
+    <a href="?lang=ko" hreflang="ko">한국어</a>
+    <a href="?lang=th" hreflang="th">ไทย</a>
+  </nav>
+</header>
+<main class="receipt">
+<h1>咖律用户协议</h1>
+<p class="meta">更新日期：2026-10-24 · 生效日期：2026-10-24</p>
+
+<p>本协议是你与 wangrui（以下简称“我们”）之间关于使用“咖律”（英文名 CafBeat，以下简称“本应用”）的协议。下载、安装或使用本应用，即表示你已阅读并同意本协议和<a href="https://wrzxnx.github.io/cafbeat-privacy/?lang=zh-Hans">《隐私政策》</a>。如果你不同意，请不要使用本应用。</p>
+
+<h2>一、服务内容</h2>
+<p>本应用是一款咖啡记录工具，提供拍照/相册识别杯贴与订单截图、记录咖啡、估算热量和咖啡因、统计报告、导出等功能。本应用不需要注册账号，数据保存在你的设备上，开启 iCloud 同步时保存在你自己的 iCloud 账户中。</p>
+
+<h2>二、估算结果仅供参考</h2>
+<ul>
+  <li>本应用中的热量、咖啡因含量、体内咖啡因曲线、睡前建议、“咖啡税”和工时折算等，均基于公开资料和通用模型估算，可能与实际情况存在差异，<strong>仅供参考，不构成任何医疗、营养或健康建议</strong>。</li>
+  <li>如果你怀孕、哺乳、患有心血管疾病、对咖啡因敏感或正在服药，请遵循医生的建议。</li>
+  <li>文字识别结果可能存在错误，请在保存前核对。</li>
+</ul>
+
+<h2>三、第三方品牌</h2>
+<p>本应用内置的咖啡品牌和饮品名称仅用于帮助你识别和记录。相关商标和名称归各自权利人所有，本应用与这些品牌不存在任何关联、合作或背书关系。</p>
+
+<h2>四、Pro 会员与应用内购买</h2>
+<ul>
+  <li>本应用的基础记录功能免费。Pro 会员提供额外的小票样式、集邮手册、杯贴票根等功能，具体以应用内说明为准。</li>
+  <li>Pro 提供两种方式：<strong>年订阅</strong>（¥18/年）和<strong>永久买断</strong>（¥38，一次性付费）。实际价格以 App Store 购买页面显示为准。</li>
+  <li>付款将在你确认购买时从你的 Apple ID 账户扣除。</li>
+  <li><strong>年订阅会自动续期</strong>：除非你在当前订阅期结束前至少 24 小时关闭自动续期，否则订阅将自动续订，Apple 会在当前订阅期结束前 24 小时内从你的账户扣除下一周期的费用。</li>
+  <li>你可以在 iPhone“设置 &gt; Apple ID &gt; 订阅”中管理或取消订阅。取消后，在当前已付费周期结束前仍可使用 Pro。</li>
+  <li>更换设备或重新安装后，可在“设置 &gt; Pro &gt; 恢复购买”中恢复已购项目（需使用同一 Apple ID）。</li>
+  <li>所有购买和退款均由 Apple 处理，如需退款，请通过 <a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a> 向 Apple 申请。</li>
+</ul>
+
+<h2>五、你的数据</h2>
+<p>你的记录归你所有。由于本应用没有服务器，我们无法替你备份或恢复数据。卸载本应用、清空数据、更换设备而未开启 iCloud 同步等情况都可能导致数据丢失，建议你开启 iCloud 同步或定期导出 CSV 备份。</p>
+
+<h2>六、使用规范</h2>
+<p>你应合法使用本应用，不得对本应用进行反向工程、反编译、破解，不得利用本应用从事违反法律法规或侵犯他人合法权益的活动。</p>
+
+<h2>七、知识产权</h2>
+<p>本应用的名称、图标、界面设计、小票样式、邮票图案、代码和内置数据整理等，其知识产权归我们所有。未经许可，不得复制、修改或用于商业用途。你通过本应用导出的图片和报告，可以自由用于个人分享。</p>
+
+<h2>八、免责与责任限制</h2>
+<p>我们会尽力保证本应用稳定可用，但不保证本应用完全无错误或不中断。在法律允许的最大范围内，因使用或无法使用本应用造成的间接损失，我们不承担责任。本条不排除或限制依法不得排除或限制的责任。</p>
+
+<h2>九、协议的变更与终止</h2>
+<p>我们可能会根据功能调整或法律法规变化更新本协议，更新后会在本页面发布。如涉及重大变化，我们会在应用内通知你。你继续使用本应用即视为接受更新后的协议。你可以随时卸载本应用以终止本协议。</p>
+
+<h2>十、法律适用与争议解决</h2>
+<p>本协议适用中华人民共和国大陆地区法律。因本协议产生的争议，双方应友好协商解决；协商不成的，任何一方可向我们所在地有管辖权的人民法院提起诉讼。</p>
+
+<h2>十一、联系我们</h2>
+<p>开发者：wangrui<br>邮箱：<a href="mailto:wrzxnx@gmail.com">wrzxnx@gmail.com</a></p>
+<p>本应用通过 Apple App Store 分发，你对本应用的使用同时受 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Apple 标准最终用户许可协议（EULA）</a>约束；二者不一致时，以本协议对你更有利的条款为准。</p>
+</main>
+<footer>
+  <p><a href="https://wrzxnx.github.io/cafbeat/?lang=zh-Hans">咖律</a> · <a href="https://wrzxnx.github.io/cafbeat-terms/?lang=zh-Hans">用户协议</a> · <a href="https://wrzxnx.github.io/cafbeat-privacy/?lang=zh-Hans">隐私政策</a> · <a href="mailto:wrzxnx@gmail.com">wrzxnx@gmail.com</a></p>
+  <p>© 2026 咖律 CafBeat</p>
+</footer>
+</section>
+<section data-lang="zh-Hant" lang="zh-Hant">
+<header class="top">
+  <a class="brand" href="https://wrzxnx.github.io/cafbeat/?lang=zh-Hant"><img src="assets/icon.png" alt="">咖律</a>
+  <nav class="lang" aria-label="Language">
+    <a href="?lang=zh-Hans" hreflang="zh-Hans">简体</a>
+    <a href="?lang=zh-Hant" aria-current="page" hreflang="zh-Hant">繁體</a>
+    <a href="?lang=en" hreflang="en">English</a>
+    <a href="?lang=ja" hreflang="ja">日本語</a>
+    <a href="?lang=ko" hreflang="ko">한국어</a>
+    <a href="?lang=th" hreflang="th">ไทย</a>
+  </nav>
+</header>
+<main class="receipt">
+<h1>咖律使用者協議</h1>
+<p class="meta">更新日期：2026-10-24 · 生效日期：2026-10-24</p>
+
+<p>本協議是你與 wangrui（以下簡稱「我們」）之間關於使用「咖律」（英文名 CafBeat，以下簡稱「本應用」）的協議。下載、安裝或使用本應用，即表示你已閱讀並同意本協議和<a href="https://wrzxnx.github.io/cafbeat-privacy/?lang=zh-Hant">《隱私政策》</a>。如果你不同意，請不要使用本應用。</p>
+
+<h2>一、服務內容</h2>
+<p>本應用是一款咖啡記錄工具，提供拍照/相簿識別杯貼與訂單截圖、記錄咖啡、估算熱量和咖啡因、統計報告、匯出等功能。本應用不需要註冊帳號，資料儲存在你的裝置上，開啟 iCloud 同步時儲存在你自己的 iCloud 帳戶中。</p>
+
+<h2>二、估算結果僅供參考</h2>
+<ul>
+  <li>本應用中的熱量、咖啡因含量、體內咖啡因曲線、睡前建議、「咖啡稅」和工時折算等，均基於公開資料和通用模型估算，可能與實際情況存在差異，<strong>僅供參考，不構成任何醫療、營養或健康建議</strong>。</li>
+  <li>如果你懷孕、哺乳、患有心血管疾病、對咖啡因敏感或正在服藥，請遵循醫生的建議。</li>
+  <li>文字識別結果可能存在錯誤，請在儲存前核對。</li>
+</ul>
+
+<h2>三、第三方品牌</h2>
+<p>本應用內建的咖啡品牌和飲品名稱僅用於幫助你識別和記錄。相關商標和名稱歸各自權利人所有，本應用與這些品牌不存在任何關聯、合作或背書關係。</p>
+
+<h2>四、Pro 會員與應用內購買</h2>
+<ul>
+  <li>本應用的基礎記錄功能免費。Pro 會員提供額外的小票樣式、集郵手冊、杯貼票根等功能，具體以應用內說明為準。</li>
+  <li>Pro 提供兩種方式：<strong>年訂閱</strong>和<strong>永久買斷</strong>（一次性付費）。價格因國家或地區而異，以 App Store 購買頁面顯示為準。</li>
+  <li>付款將在你確認購買時從你的 Apple ID 帳戶扣除。</li>
+  <li><strong>年訂閱會自動續期</strong>：除非你在當前訂閱期結束前至少 24 小時關閉自動續期，否則訂閱將自動續訂，Apple 會在當前訂閱期結束前 24 小時內從你的帳戶扣除下一週期的費用。</li>
+  <li>你可以在 iPhone「設定 &gt; Apple ID &gt; 訂閱」中管理或取消訂閱。取消後，在當前已付費週期結束前仍可使用 Pro。</li>
+  <li>更換裝置或重新安裝後，可在「設定 &gt; Pro &gt; 恢復購買」中恢復已購項目（需使用同一 Apple ID）。</li>
+  <li>所有購買和退款均由 Apple 處理，如需退款，請透過 <a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a> 向 Apple 申請。</li>
+</ul>
+
+<h2>五、你的資料</h2>
+<p>你的記錄歸你所有。由於本應用沒有伺服器，我們無法替你備份或恢復資料。解除安裝本應用、清空資料、更換裝置而未開啟 iCloud 同步等情況都可能導致資料丟失，建議你開啟 iCloud 同步或定期匯出 CSV 備份。</p>
+
+<h2>六、使用規範</h2>
+<p>你應合法使用本應用，不得對本應用進行反向工程、反編譯、破解，不得利用本應用從事違反法律法規或侵犯他人合法權益的活動。</p>
+
+<h2>七、智慧財產權</h2>
+<p>本應用的名稱、圖示、介面設計、小票樣式、郵票圖案、程式碼和內建資料整理等，其智慧財產權歸我們所有。未經許可，不得複製、修改或用於商業用途。你透過本應用匯出的圖片和報告，可以自由用於個人分享。</p>
+
+<h2>八、免責與責任限制</h2>
+<p>我們會盡力保證本應用穩定可用，但不保證本應用完全無錯誤或不中斷。在法律允許的最大範圍內，因使用或無法使用本應用造成的間接損失，我們不承擔責任。本條不排除或限制依法不得排除或限制的責任。</p>
+
+<h2>九、協議的變更與終止</h2>
+<p>我們可能會根據功能調整或法律法規變化更新本協議，更新後會在本頁面釋出。如涉及重大變化，我們會在應用內通知你。你繼續使用本應用即視為接受更新後的協議。你可以隨時解除安裝本應用以終止本協議。</p>
+
+<h2>十、法律適用與爭議解決</h2>
+<p>本協議適用中華人民共和國大陸地區法律。因本協議產生的爭議，雙方應友好協商解決；協商不成的，任何一方可向我們所在地有管轄權的人民法院提起訴訟。</p>
+
+<h2>十一、聯絡我們</h2>
+<p>開發者：wangrui<br>電子郵件：<a href="mailto:wrzxnx@gmail.com">wrzxnx@gmail.com</a></p>
+<p>本應用透過 Apple App Store 分發，你對本應用的使用同時受 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Apple 標準終端使用者許可協議（EULA）</a>約束；二者不一致時，以本協議對你更有利的條款為準。</p>
+</main>
+<footer>
+  <p><a href="https://wrzxnx.github.io/cafbeat/?lang=zh-Hant">咖律</a> · <a href="https://wrzxnx.github.io/cafbeat-terms/?lang=zh-Hant">使用者協議</a> · <a href="https://wrzxnx.github.io/cafbeat-privacy/?lang=zh-Hant">隱私政策</a> · <a href="mailto:wrzxnx@gmail.com">wrzxnx@gmail.com</a></p>
+  <p>© 2026 咖律 CafBeat</p>
+</footer>
+</section>
+<section data-lang="en" lang="en">
+<header class="top">
+  <a class="brand" href="https://wrzxnx.github.io/cafbeat/?lang=en"><img src="assets/icon.png" alt="">CafBeat</a>
+  <nav class="lang" aria-label="Language">
+    <a href="?lang=zh-Hans" hreflang="zh-Hans">简体</a>
+    <a href="?lang=zh-Hant" hreflang="zh-Hant">繁體</a>
+    <a href="?lang=en" aria-current="page" hreflang="en">English</a>
+    <a href="?lang=ja" hreflang="ja">日本語</a>
+    <a href="?lang=ko" hreflang="ko">한국어</a>
+    <a href="?lang=th" hreflang="th">ไทย</a>
+  </nav>
+</header>
+<main class="receipt">
+<h1>CafBeat Terms of Use</h1>
+<p class="meta">Last updated: 2026-10-24 · Effective: 2026-10-24</p>
+
+<p>These terms are an agreement between you and wangrui (“we”, “us”) for your use of CafBeat (咖律, the “App”). By downloading, installing or using the App, you agree to these terms and the <a href="https://wrzxnx.github.io/cafbeat-privacy/?lang=en">Privacy Policy</a>. If you don’t agree, please don’t use the App. If the language versions differ, the English version prevails for users outside mainland China and the Simplified Chinese version prevails for users in mainland China.</p>
+
+<h2>1. The service</h2>
+<p>The App is a coffee log. It recognizes cup labels and order screenshots, records coffee, estimates calories and caffeine, and produces statistics, reports and exports. No account is needed; your data is stored on your device, and in your own iCloud account if you turn on sync.</p>
+
+<h2>2. Estimates are for reference only</h2>
+<ul>
+  <li>Calories, caffeine content, the caffeine curve, bedtime suggestions, the “coffee tax” and work-hour conversions are estimates based on public information and general models. They may differ from reality and are <strong>for reference only, not medical, nutritional or health advice</strong>.</li>
+  <li>If you are pregnant, breastfeeding, have a heart condition, are sensitive to caffeine or take medication, follow your doctor’s advice.</li>
+  <li>Text recognition can make mistakes. Please check results before saving.</li>
+</ul>
+
+<h2>3. Third-party brands</h2>
+<p>Coffee brand and drink names in the App are there only to help you recognize and log your drinks. All trademarks belong to their respective owners. The App is not affiliated with, sponsored by or endorsed by any of these brands.</p>
+
+<h2>4. CafBeat Pro and in-app purchases</h2>
+<ul>
+  <li>Core logging is free. CafBeat Pro adds extra receipt styles, the stamp album, cup label stubs and other features described in the App.</li>
+  <li>Pro is offered as a <strong>yearly subscription</strong> or a <strong>one-time lifetime purchase</strong>. Prices vary by country or region; the price shown on the App Store purchase sheet applies.</li>
+  <li>Payment is charged to your Apple ID account when you confirm the purchase.</li>
+  <li><strong>The yearly subscription renews automatically</strong> unless auto-renew is turned off at least 24 hours before the end of the current period. Your account will be charged for renewal within 24 hours before the end of the current period.</li>
+  <li>You can manage or cancel subscriptions in iPhone Settings &gt; [your name] &gt; Subscriptions. After cancelling, Pro remains available until the end of the paid period.</li>
+  <li>On a new device or after reinstalling, use Settings &gt; Pro &gt; Restore Purchases with the same Apple ID.</li>
+  <li>All purchases and refunds are handled by Apple. To request a refund, visit <a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a>.</li>
+</ul>
+
+<h2>5. Your data</h2>
+<p>Your records belong to you. Because the App has no servers, we cannot back up or restore your data. Deleting the App, erasing data, or switching devices without iCloud sync may cause data loss. We recommend turning on iCloud sync or exporting a CSV backup regularly.</p>
+
+<h2>6. Acceptable use</h2>
+<p>Use the App lawfully. Do not reverse engineer, decompile or crack the App, or use it to break the law or infringe the rights of others.</p>
+
+<h2>7. Intellectual property</h2>
+<p>The App’s name, icon, interface design, receipt styles, stamp artwork, code and curated built-in data belong to us. Do not copy, modify or use them commercially without permission. Images and reports you export from the App are yours to share for personal use.</p>
+
+<h2>8. Disclaimer and limitation of liability</h2>
+<p>We work to keep the App reliable but do not guarantee it is error-free or uninterrupted. To the maximum extent permitted by law, we are not liable for indirect losses arising from use of or inability to use the App. Nothing here excludes or limits liability that cannot be excluded or limited by law.</p>
+
+<h2>9. Changes and termination</h2>
+<p>We may update these terms when features or laws change and will post updates on this page. For material changes we will notify you in the App. Continuing to use the App means you accept the updated terms. You may stop using the App and delete it at any time.</p>
+
+<h2>10. Governing law</h2>
+<p>These terms are governed by the laws of the mainland of the People’s Republic of China. Disputes should first be resolved through friendly negotiation; failing that, either party may bring a claim before a competent people’s court where we are located.</p>
+
+<h2>11. Contact</h2>
+<p>Developer: wangrui<br>Email: <a href="mailto:wrzxnx@gmail.com">wrzxnx@gmail.com</a></p>
+<p>The App is distributed through the Apple App Store, and your use is also subject to Apple’s <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Standard End User License Agreement (EULA)</a>. Where the two conflict, the term more favorable to you applies.</p>
+</main>
+<footer>
+  <p><a href="https://wrzxnx.github.io/cafbeat/?lang=en">CafBeat</a> · <a href="https://wrzxnx.github.io/cafbeat-terms/?lang=en">Terms of Use</a> · <a href="https://wrzxnx.github.io/cafbeat-privacy/?lang=en">Privacy Policy</a> · <a href="mailto:wrzxnx@gmail.com">wrzxnx@gmail.com</a></p>
+  <p>© 2026 咖律 CafBeat</p>
+</footer>
+</section>
+<section data-lang="ja" lang="ja">
+<header class="top">
+  <a class="brand" href="https://wrzxnx.github.io/cafbeat/?lang=ja"><img src="assets/icon.png" alt="">CafBeat</a>
+  <nav class="lang" aria-label="Language">
+    <a href="?lang=zh-Hans" hreflang="zh-Hans">简体</a>
+    <a href="?lang=zh-Hant" hreflang="zh-Hant">繁體</a>
+    <a href="?lang=en" hreflang="en">English</a>
+    <a href="?lang=ja" aria-current="page" hreflang="ja">日本語</a>
+    <a href="?lang=ko" hreflang="ko">한국어</a>
+    <a href="?lang=th" hreflang="th">ไทย</a>
+  </nav>
+</header>
+<main class="receipt">
+<h1>CafBeat 利用規約</h1>
+<p class="meta">最終更新日：2026-10-24 · 施行日：2026-10-24</p>
+
+<p>本規約は、CafBeat（咖律、以下「本アプリ」）の利用に関する、お客様と wangrui（以下「当方」）との間の契約です。本アプリをダウンロード、インストール、または使用することにより、お客様は本規約および<a href="https://wrzxnx.github.io/cafbeat-privacy/?lang=ja">プライバシーポリシー</a>に同意したものとみなされます。同意いただけない場合は、本アプリを使用しないでください。各言語版の内容に相違がある場合、中国本土以外のお客様には英語版が、中国本土のお客様には簡体字中国語版が優先されます。</p>
+
+<h2>1. サービス内容</h2>
+<p>本アプリはコーヒーの記録アプリです。カップラベルや注文スクリーンショットの認識、コーヒーの記録、カロリーとカフェインの推定、統計・レポート・書き出しを提供します。アカウントは不要で、データはお客様のデバイス内に、同期をオンにした場合はお客様自身の iCloud アカウントに保存されます。</p>
+
+<h2>2. 推定値は参考情報です</h2>
+<ul>
+  <li>カロリー、カフェイン量、カフェイン曲線、就寝前の目安、「コーヒー税」や労働時間への換算は、公開情報と一般的なモデルに基づく推定値です。実際とは異なる場合があり、<strong>参考情報にすぎず、医療・栄養・健康に関する助言ではありません</strong>。</li>
+  <li>妊娠中・授乳中の方、心疾患のある方、カフェインに敏感な方、服薬中の方は、医師の指示に従ってください。</li>
+  <li>文字認識には誤りが含まれる場合があります。保存前に結果をご確認ください。</li>
+</ul>
+
+<h2>3. 他社ブランド</h2>
+<p>本アプリ内のコーヒーブランド名やドリンク名は、ドリンクの認識と記録を助ける目的でのみ使用しています。すべての商標はそれぞれの権利者に帰属します。本アプリはこれらのブランドと提携・後援・推奨の関係にありません。</p>
+
+<h2>4. CafBeat Pro とアプリ内課金</h2>
+<ul>
+  <li>基本的な記録機能は無料です。CafBeat Pro では、追加のレシートスタイル、スタンプ帳、カップラベル半券など、アプリ内で説明する機能が使えます。</li>
+  <li>Pro には<strong>年間サブスクリプション</strong>と<strong>買い切り</strong>があります。価格は国や地域によって異なり、App Store の購入画面に表示される価格が適用されます。</li>
+  <li>代金は購入の確定時にお客様の Apple ID アカウントに請求されます。</li>
+  <li><strong>年間サブスクリプションは自動更新されます。</strong>現在の期間が終了する 24 時間前までに自動更新をオフにしない限り、現在の期間終了前の 24 時間以内に次の期間の料金が請求されます。</li>
+  <li>サブスクリプションは iPhone の「設定」&gt;［ユーザ名］&gt;「サブスクリプション」で管理・解約できます。解約後も、支払い済みの期間が終わるまで Pro を利用できます。</li>
+  <li>新しいデバイスや再インストール後は、同じ Apple ID で「設定」&gt;「Pro」&gt;「購入を復元」を使ってください。</li>
+  <li>購入と返金はすべて Apple が取り扱います。返金のご依頼は <a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a> からお願いします。</li>
+</ul>
+
+<h2>5. お客様のデータ</h2>
+<p>記録はお客様のものです。本アプリにはサーバーがないため、当方がデータをバックアップしたり復元したりすることはできません。アプリの削除、データの消去、iCloud 同期なしでのデバイス変更などによりデータが失われる場合があります。iCloud 同期をオンにするか、定期的に CSV でバックアップすることをおすすめします。</p>
+
+<h2>6. 禁止事項</h2>
+<p>本アプリは適法に使用してください。本アプリのリバースエンジニアリング、逆コンパイル、改ざん、および法令違反や他者の権利侵害のための使用は禁止します。</p>
+
+<h2>7. 知的財産</h2>
+<p>本アプリの名称、アイコン、画面デザイン、レシートスタイル、スタンプのアートワーク、コード、整理された内蔵データは当方に帰属します。許可なく複製、改変、商用利用することはできません。本アプリから書き出した画像やレポートは、個人的な共有のために自由にお使いいただけます。</p>
+
+<h2>8. 免責と責任の制限</h2>
+<p>当方は本アプリの安定動作に努めますが、誤りや中断がないことは保証しません。法令で認められる最大限の範囲で、本アプリの使用または使用不能から生じた間接的な損害について当方は責任を負いません。法令により除外・制限できない責任を除外・制限するものではありません。</p>
+
+<h2>9. 変更と終了</h2>
+<p>機能や法令の変更に応じて本規約を更新することがあり、更新内容は本ページに掲載します。重要な変更はアプリ内でお知らせします。本アプリの使用を続けた場合、更新後の規約に同意したものとみなされます。お客様はいつでも本アプリの使用をやめ、削除することができます。</p>
+
+<h2>10. 準拠法</h2>
+<p>本規約は中華人民共和国（本土）の法律に準拠します。紛争はまず友好的な協議により解決を図り、解決しない場合は、いずれの当事者も当方の所在地を管轄する人民法院に訴えを提起できます。お客様の居住国の消費者保護法により認められる権利は、本条によって制限されません。</p>
+
+<h2>11. お問い合わせ</h2>
+<p>開発者：wangrui<br>メール：<a href="mailto:wrzxnx@gmail.com">wrzxnx@gmail.com</a></p>
+<p>本アプリは Apple App Store を通じて配信されており、ご利用には Apple の<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">標準使用許諾契約（EULA）</a>も適用されます。両者が矛盾する場合は、お客様にとってより有利な条項が適用されます。</p>
+</main>
+<footer>
+  <p><a href="https://wrzxnx.github.io/cafbeat/?lang=ja">CafBeat</a> · <a href="https://wrzxnx.github.io/cafbeat-terms/?lang=ja">利用規約</a> · <a href="https://wrzxnx.github.io/cafbeat-privacy/?lang=ja">プライバシーポリシー</a> · <a href="mailto:wrzxnx@gmail.com">wrzxnx@gmail.com</a></p>
+  <p>© 2026 咖律 CafBeat</p>
+</footer>
+</section>
+<section data-lang="ko" lang="ko">
+<header class="top">
+  <a class="brand" href="https://wrzxnx.github.io/cafbeat/?lang=ko"><img src="assets/icon.png" alt="">CafBeat</a>
+  <nav class="lang" aria-label="Language">
+    <a href="?lang=zh-Hans" hreflang="zh-Hans">简体</a>
+    <a href="?lang=zh-Hant" hreflang="zh-Hant">繁體</a>
+    <a href="?lang=en" hreflang="en">English</a>
+    <a href="?lang=ja" hreflang="ja">日本語</a>
+    <a href="?lang=ko" aria-current="page" hreflang="ko">한국어</a>
+    <a href="?lang=th" hreflang="th">ไทย</a>
+  </nav>
+</header>
+<main class="receipt">
+<h1>CafBeat 이용약관</h1>
+<p class="meta">최종 업데이트: 2026-10-24 · 시행일: 2026-10-24</p>
+
+<p>본 약관은 CafBeat(咖律, 이하 '앱')의 이용과 관련하여 사용자와 wangrui(이하 '당사') 간에 체결되는 계약입니다. 앱을 다운로드, 설치 또는 사용하면 본 약관과 <a href="https://wrzxnx.github.io/cafbeat-privacy/?lang=ko">개인정보 처리방침</a>에 동의한 것으로 봅니다. 동의하지 않는 경우 앱을 사용하지 마세요. 언어별 버전 간에 차이가 있는 경우, 중국 본토 이외의 사용자에게는 영어 버전이, 중국 본토 사용자에게는 중국어 간체 버전이 우선합니다.</p>
+
+<h2>1. 서비스 내용</h2>
+<p>앱은 커피 기록 앱입니다. 컵 라벨과 주문 스크린샷 인식, 커피 기록, 칼로리 및 카페인 추정, 통계·리포트·내보내기 기능을 제공합니다. 계정이 필요 없으며, 데이터는 사용자의 기기에, 동기화를 켠 경우 사용자 본인의 iCloud 계정에 저장됩니다.</p>
+
+<h2>2. 추정치는 참고용입니다</h2>
+<ul>
+  <li>칼로리, 카페인 함량, 카페인 곡선, 취침 전 권장 사항, '커피세', 근무 시간 환산은 공개 자료와 일반 모델을 바탕으로 한 추정치입니다. 실제와 다를 수 있으며 <strong>참고용일 뿐 의료·영양·건강에 관한 조언이 아닙니다</strong>.</li>
+  <li>임신 중이거나 수유 중인 경우, 심장 질환이 있거나 카페인에 민감한 경우, 약을 복용 중인 경우에는 의사의 조언을 따르세요.</li>
+  <li>텍스트 인식에는 오류가 있을 수 있으니 저장하기 전에 결과를 확인하세요.</li>
+</ul>
+
+<h2>3. 타사 브랜드</h2>
+<p>앱에 포함된 커피 브랜드 및 음료 이름은 음료 인식과 기록을 돕기 위한 목적으로만 사용됩니다. 모든 상표는 각 권리자에게 있으며, 앱은 이러한 브랜드와 제휴, 후원 또는 보증 관계가 없습니다.</p>
+
+<h2>4. CafBeat Pro 및 앱 내 구입</h2>
+<ul>
+  <li>기본 기록 기능은 무료입니다. CafBeat Pro는 추가 영수증 스타일, 스탬프 앨범, 컵 라벨 티켓 등 앱에서 안내하는 기능을 제공합니다.</li>
+  <li>Pro는 <strong>연간 구독</strong>과 <strong>평생 이용권(1회 결제)</strong>으로 제공됩니다. 가격은 국가나 지역에 따라 다르며 App Store 구입 화면에 표시된 가격이 적용됩니다.</li>
+  <li>결제는 구입을 확정할 때 사용자의 Apple ID 계정으로 청구됩니다.</li>
+  <li><strong>연간 구독은 자동으로 갱신됩니다.</strong> 현재 기간이 끝나기 최소 24시간 전에 자동 갱신을 끄지 않으면, 현재 기간 종료 전 24시간 이내에 다음 기간 요금이 청구됩니다.</li>
+  <li>구독은 iPhone '설정' &gt; [사용자 이름] &gt; '구독'에서 관리하거나 취소할 수 있습니다. 취소 후에도 결제한 기간이 끝날 때까지 Pro를 사용할 수 있습니다.</li>
+  <li>새 기기나 재설치 후에는 같은 Apple ID로 '설정' &gt; 'Pro' &gt; '구입 복원'을 사용하세요.</li>
+  <li>모든 구입과 환불은 Apple이 처리합니다. 환불은 <a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a>에서 요청하세요.</li>
+</ul>
+
+<h2>5. 사용자의 데이터</h2>
+<p>기록은 사용자의 것입니다. 앱에는 서버가 없으므로 당사가 데이터를 백업하거나 복원해 드릴 수 없습니다. 앱 삭제, 데이터 지우기, iCloud 동기화 없이 기기를 바꾸는 경우 등에는 데이터가 사라질 수 있습니다. iCloud 동기화를 켜거나 정기적으로 CSV로 백업하는 것을 권장합니다.</p>
+
+<h2>6. 이용 규칙</h2>
+<p>앱을 합법적으로 사용하세요. 앱을 리버스 엔지니어링, 디컴파일 또는 크랙하거나, 법을 위반하거나 타인의 권리를 침해하는 데 사용해서는 안 됩니다.</p>
+
+<h2>7. 지식재산권</h2>
+<p>앱의 이름, 아이콘, 인터페이스 디자인, 영수증 스타일, 스탬프 아트워크, 코드 및 정리된 내장 데이터는 당사에 귀속됩니다. 허가 없이 복제, 수정하거나 상업적으로 이용할 수 없습니다. 앱에서 내보낸 이미지와 리포트는 개인적인 공유를 위해 자유롭게 사용할 수 있습니다.</p>
+
+<h2>8. 면책 및 책임 제한</h2>
+<p>당사는 앱이 안정적으로 작동하도록 노력하지만 오류나 중단이 없음을 보장하지는 않습니다. 법이 허용하는 최대 범위에서, 앱의 사용 또는 사용 불가로 인한 간접 손해에 대해 당사는 책임을 지지 않습니다. 법에 따라 배제하거나 제한할 수 없는 책임은 배제되거나 제한되지 않습니다.</p>
+
+<h2>9. 변경 및 종료</h2>
+<p>기능이나 법령이 바뀌면 본 약관을 업데이트할 수 있으며, 업데이트 내용은 이 페이지에 게시합니다. 중요한 변경은 앱에서 알려 드립니다. 앱을 계속 사용하면 업데이트된 약관에 동의한 것으로 봅니다. 사용자는 언제든지 앱 사용을 중단하고 삭제할 수 있습니다.</p>
+
+<h2>10. 준거법</h2>
+<p>본 약관은 중화인민공화국(본토) 법률을 준거법으로 합니다. 분쟁은 먼저 우호적인 협의로 해결하며, 협의가 이루어지지 않으면 어느 당사자든 당사 소재지를 관할하는 인민법원에 소를 제기할 수 있습니다. 사용자가 거주하는 국가의 소비자 보호법에 따른 권리는 본 조항으로 제한되지 않습니다.</p>
+
+<h2>11. 문의</h2>
+<p>개발자: wangrui<br>이메일: <a href="mailto:wrzxnx@gmail.com">wrzxnx@gmail.com</a></p>
+<p>앱은 Apple App Store를 통해 배포되며, 앱 사용에는 Apple의 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">표준 최종 사용자 사용권 계약(EULA)</a>도 적용됩니다. 두 내용이 상충하는 경우 사용자에게 더 유리한 조항이 적용됩니다.</p>
+</main>
+<footer>
+  <p><a href="https://wrzxnx.github.io/cafbeat/?lang=ko">CafBeat</a> · <a href="https://wrzxnx.github.io/cafbeat-terms/?lang=ko">이용약관</a> · <a href="https://wrzxnx.github.io/cafbeat-privacy/?lang=ko">개인정보 처리방침</a> · <a href="mailto:wrzxnx@gmail.com">wrzxnx@gmail.com</a></p>
+  <p>© 2026 咖律 CafBeat</p>
+</footer>
+</section>
+<section data-lang="th" lang="th">
+<header class="top">
+  <a class="brand" href="https://wrzxnx.github.io/cafbeat/?lang=th"><img src="assets/icon.png" alt="">CafBeat</a>
+  <nav class="lang" aria-label="Language">
+    <a href="?lang=zh-Hans" hreflang="zh-Hans">简体</a>
+    <a href="?lang=zh-Hant" hreflang="zh-Hant">繁體</a>
+    <a href="?lang=en" hreflang="en">English</a>
+    <a href="?lang=ja" hreflang="ja">日本語</a>
+    <a href="?lang=ko" hreflang="ko">한국어</a>
+    <a href="?lang=th" aria-current="page" hreflang="th">ไทย</a>
+  </nav>
+</header>
+<main class="receipt">
+<h1>ข้อกำหนดการใช้งาน CafBeat</h1>
+<p class="meta">ปรับปรุงล่าสุด: 2026-10-24 · มีผลบังคับใช้: 2026-10-24</p>
+
+<p>ข้อกำหนดนี้เป็นข้อตกลงระหว่างคุณกับ wangrui (ต่อไปเรียกว่า "เรา") เกี่ยวกับการใช้งาน CafBeat (咖律 ต่อไปเรียกว่า "แอป") เมื่อคุณดาวน์โหลด ติดตั้ง หรือใช้แอป ถือว่าคุณยอมรับข้อกำหนดนี้และ<a href="https://wrzxnx.github.io/cafbeat-privacy/?lang=th">นโยบายความเป็นส่วนตัว</a> หากไม่ยอมรับ โปรดอย่าใช้แอป หากฉบับภาษาต่าง ๆ มีเนื้อหาไม่ตรงกัน สำหรับผู้ใช้นอกจีนแผ่นดินใหญ่ให้ยึดฉบับภาษาอังกฤษ และสำหรับผู้ใช้ในจีนแผ่นดินใหญ่ให้ยึดฉบับภาษาจีนตัวย่อ</p>
+
+<h2>1. บริการ</h2>
+<p>แอปนี้เป็นแอปบันทึกกาแฟ ช่วยจดจำฉลากแก้วและภาพหน้าจอคำสั่งซื้อ บันทึกกาแฟ ประมาณแคลอรีและคาเฟอีน และสร้างสถิติ รายงาน และการส่งออก ไม่ต้องมีบัญชีผู้ใช้ ข้อมูลของคุณจัดเก็บบนอุปกรณ์ และในบัญชี iCloud ของคุณเองหากเปิดการซิงค์</p>
+
+<h2>2. ค่าประมาณมีไว้เพื่ออ้างอิงเท่านั้น</h2>
+<ul>
+  <li>แคลอรี ปริมาณคาเฟอีน กราฟคาเฟอีน คำแนะนำก่อนนอน "ภาษีกาแฟ" และการแปลงเป็นชั่วโมงทำงาน เป็นค่าประมาณจากข้อมูลสาธารณะและแบบจำลองทั่วไป อาจแตกต่างจากความเป็นจริง และ<strong>มีไว้เพื่ออ้างอิงเท่านั้น ไม่ใช่คำแนะนำทางการแพทย์ โภชนาการ หรือสุขภาพ</strong></li>
+  <li>หากคุณตั้งครรภ์ ให้นมบุตร มีโรคหัวใจ ไวต่อคาเฟอีน หรือกำลังใช้ยา โปรดปฏิบัติตามคำแนะนำของแพทย์</li>
+  <li>การจดจำข้อความอาจผิดพลาดได้ โปรดตรวจสอบผลลัพธ์ก่อนบันทึก</li>
+</ul>
+
+<h2>3. แบรนด์ของบุคคลที่สาม</h2>
+<p>ชื่อแบรนด์กาแฟและชื่อเครื่องดื่มในแอปมีไว้เพื่อช่วยคุณจดจำและบันทึกเครื่องดื่มเท่านั้น เครื่องหมายการค้าทั้งหมดเป็นของเจ้าของแต่ละราย แอปนี้ไม่มีความเกี่ยวข้อง ไม่ได้รับการสนับสนุน หรือการรับรองจากแบรนด์เหล่านี้</p>
+
+<h2>4. CafBeat Pro และการซื้อภายในแอป</h2>
+<ul>
+  <li>ฟีเจอร์บันทึกพื้นฐานใช้งานได้ฟรี CafBeat Pro เพิ่มรูปแบบใบเสร็จ สมุดสะสมแสตมป์ ต้นขั้วฉลากแก้ว และฟีเจอร์อื่นตามที่ระบุในแอป</li>
+  <li>Pro มีให้เลือกแบบ<strong>สมัครสมาชิกรายปี</strong>หรือ<strong>ซื้อแบบตลอดชีพครั้งเดียว</strong> ราคาแตกต่างกันตามประเทศหรือภูมิภาค โดยใช้ราคาที่แสดงในหน้าซื้อของ App Store</li>
+  <li>ระบบจะเรียกเก็บเงินจากบัญชี Apple ID ของคุณเมื่อคุณยืนยันการซื้อ</li>
+  <li><strong>การสมัครสมาชิกรายปีจะต่ออายุโดยอัตโนมัติ</strong> เว้นแต่คุณจะปิดการต่ออายุอัตโนมัติอย่างน้อย 24 ชั่วโมงก่อนสิ้นสุดรอบปัจจุบัน บัญชีของคุณจะถูกเรียกเก็บเงินสำหรับรอบถัดไปภายใน 24 ชั่วโมงก่อนสิ้นสุดรอบปัจจุบัน</li>
+  <li>คุณจัดการหรือยกเลิกการสมัครสมาชิกได้ที่ การตั้งค่าของ iPhone &gt; [ชื่อของคุณ] &gt; การสมัครรับ หลังจากยกเลิก คุณยังใช้ Pro ได้จนสิ้นสุดรอบที่ชำระเงินแล้ว</li>
+  <li>เมื่อใช้อุปกรณ์ใหม่หรือติดตั้งใหม่ ให้ใช้ การตั้งค่า &gt; Pro &gt; กู้คืนการซื้อ ด้วย Apple ID เดิม</li>
+  <li>การซื้อและการคืนเงินทั้งหมดดำเนินการโดย Apple หากต้องการขอคืนเงิน โปรดไปที่ <a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a></li>
+</ul>
+
+<h2>5. ข้อมูลของคุณ</h2>
+<p>บันทึกของคุณเป็นของคุณ เนื่องจากแอปไม่มีเซิร์ฟเวอร์ เราจึงไม่สามารถสำรองหรือกู้คืนข้อมูลให้คุณได้ การลบแอป การลบข้อมูล หรือการเปลี่ยนอุปกรณ์โดยไม่เปิดการซิงค์ iCloud อาจทำให้ข้อมูลสูญหาย เราแนะนำให้เปิดการซิงค์ iCloud หรือส่งออก CSV สำรองไว้เป็นประจำ</p>
+
+<h2>6. การใช้งานที่เหมาะสม</h2>
+<p>โปรดใช้แอปอย่างถูกกฎหมาย ห้ามทำวิศวกรรมย้อนกลับ ถอดรหัส หรือแคร็กแอป หรือใช้แอปเพื่อละเมิดกฎหมายหรือสิทธิ์ของผู้อื่น</p>
+
+<h2>7. ทรัพย์สินทางปัญญา</h2>
+<p>ชื่อ ไอคอน การออกแบบอินเทอร์เฟซ รูปแบบใบเสร็จ ภาพแสตมป์ โค้ด และข้อมูลในตัวแอปที่เรารวบรวม เป็นของเรา ห้ามคัดลอก ดัดแปลง หรือใช้เชิงพาณิชย์โดยไม่ได้รับอนุญาต ภาพและรายงานที่คุณส่งออกจากแอปสามารถแชร์เพื่อการใช้งานส่วนตัวได้อย่างอิสระ</p>
+
+<h2>8. ข้อจำกัดความรับผิด</h2>
+<p>เราพยายามทำให้แอปทำงานได้อย่างเสถียร แต่ไม่รับประกันว่าแอปจะไม่มีข้อผิดพลาดหรือไม่หยุดชะงัก ภายในขอบเขตสูงสุดที่กฎหมายอนุญาต เราไม่รับผิดชอบต่อความเสียหายทางอ้อมที่เกิดจากการใช้หรือไม่สามารถใช้แอป ทั้งนี้ไม่ยกเว้นหรือจำกัดความรับผิดที่กฎหมายไม่อนุญาตให้ยกเว้นหรือจำกัด</p>
+
+<h2>9. การเปลี่ยนแปลงและการสิ้นสุด</h2>
+<p>เราอาจปรับปรุงข้อกำหนดนี้เมื่อฟีเจอร์หรือกฎหมายเปลี่ยนแปลง และจะเผยแพร่ในหน้านี้ หากมีการเปลี่ยนแปลงสำคัญ เราจะแจ้งในแอป การใช้แอปต่อไปถือว่าคุณยอมรับข้อกำหนดที่ปรับปรุงแล้ว คุณสามารถเลิกใช้และลบแอปได้ทุกเมื่อ</p>
+
+<h2>10. กฎหมายที่ใช้บังคับ</h2>
+<p>ข้อกำหนดนี้อยู่ภายใต้กฎหมายของสาธารณรัฐประชาชนจีน (แผ่นดินใหญ่) ข้อพิพาทควรแก้ไขด้วยการเจรจาอย่างฉันมิตรก่อน หากไม่สำเร็จ ฝ่ายใดฝ่ายหนึ่งสามารถยื่นฟ้องต่อศาลประชาชนที่มีเขตอำนาจในพื้นที่ที่เราตั้งอยู่ ทั้งนี้ไม่จำกัดสิทธิ์ที่คุณมีตามกฎหมายคุ้มครองผู้บริโภคของประเทศที่คุณพำนัก</p>
+
+<h2>11. ติดต่อ</h2>
+<p>ผู้พัฒนา: wangrui<br>อีเมล: <a href="mailto:wrzxnx@gmail.com">wrzxnx@gmail.com</a></p>
+<p>แอปนี้เผยแพร่ผ่าน Apple App Store และการใช้งานของคุณอยู่ภายใต้<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">ข้อตกลงสิทธิ์การใช้งานสำหรับผู้ใช้ปลายทางมาตรฐาน (EULA) ของ Apple</a>ด้วย หากทั้งสองขัดแย้งกัน ให้ใช้ข้อที่เป็นประโยชน์ต่อคุณมากกว่า</p>
+</main>
+<footer>
+  <p><a href="https://wrzxnx.github.io/cafbeat/?lang=th">CafBeat</a> · <a href="https://wrzxnx.github.io/cafbeat-terms/?lang=th">ข้อกำหนดการใช้งาน</a> · <a href="https://wrzxnx.github.io/cafbeat-privacy/?lang=th">นโยบายความเป็นส่วนตัว</a> · <a href="mailto:wrzxnx@gmail.com">wrzxnx@gmail.com</a></p>
+  <p>© 2026 咖律 CafBeat</p>
+</footer>
+</section>
+</div>
+</body>
+</html>
